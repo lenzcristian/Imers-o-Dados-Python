@@ -9,7 +9,9 @@ Criar uma aplicação web simples e eficiente que permita:
 - Analisar diferenças entre trabalho remoto e presencial
 - Visualizar médias salariais por país
 - Praticar **análise de dados**, **visualização** e **desenvolvimento de dashboards** com Python
+
 Nome do Dataset: `dados-imersao-final.csv`
+
 Fonte do Dataset: `https://github.com/almeidamarcell/imersao-dados-python-alura-2025/blob/main/dados-imersao-final.csv`
 
 Como rodar local:
