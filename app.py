@@ -3,6 +3,14 @@ import pandas as pd
 import plotly.express as px
 import pycountry 
 
+@st.cache_data
+def load_data():
+ url = Literal ["https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv"]
+ return pd.read_csv(url)
+
+
+df = load_data()
+
 # --- Configuração da Página ---
 # Define o título da página, o ícone e o layout para ocupar a largura inteira.
 st.set_page_config(
@@ -136,4 +144,5 @@ with col_graf4:
 
 # --- Tabela de Dados Detalhados ---
 st.subheader("Dados Detalhados")
+
 st.dataframe(df_filtrado)
